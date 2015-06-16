@@ -1,6 +1,6 @@
 # typed-bone
 
-SPA site starter using Typescript and Browserify
+SPA site starter using Typescript, Browserify and Backbone
 
 ## Install
 
