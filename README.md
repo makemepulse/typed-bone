@@ -23,7 +23,7 @@ This will install the project and its dependencies to be able to develop
 Packages used on the end code.
 Feel free to add more ( npm install --save [packageName] )
 
-[BackboneJS](http://backbonejs.org/)
+[BackboneJS](http://backbonejs.org/)  
 [jQuery](https://jquery.com/)  
 [GSAP/Tweenmax](http://www.greensock.com/gsap-js/)  
 [Underscore](http://underscorejs.org/)
