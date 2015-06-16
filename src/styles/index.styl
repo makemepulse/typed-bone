@@ -1,0 +1,39 @@
+@import './base/*';
+
+html,
+body,
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #fff; 
+}
+
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.gradient-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  // background: #ffffff;
+  // background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%,  rgba(0,0,0, .5) 70%);
+  // background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(70%, rgba(0,0,0, .5)));
+  // background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(0,0,0, .5) 70%);
+  // background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(0,0,0, .5) 70%);
+  // background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(0,0,0, .5) 70%);
+  background: radial-gradient(ellipse at center, #ffffff 0%, rgba(0,0,0, 1) 80%);
+}
+
+.dg.ac {
+  z-index: 2 !important;
+}

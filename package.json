@@ -1,0 +1,41 @@
+{
+  "name": "type-bone",
+  "version": "0.0.1",
+  "description": "SPA boilerplate using typescript, browserify and backbone",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:server & npm run watch",
+    "start:server": "browser-sync start --server 'static' --files 'static/' --port 9000 --no-ui",
+    "build": "npm run build:js && npm run build:js:vendor && npm run build:css",
+    "build:js": "browserify src/scripts/index.ts --d -p [ tsify ] -o static/assets/js/main.js",
+    "build:js:vendor": "browserify src/scripts/vendor/vendor.js > static/assets/js/vendor/v.js",
+    "build:css": "stylus src/styles/index.styl -o static/assets/css/main.css",
+    "watch": "npm run watch:js & npm run watch:css",
+    "watch:js": "watchify -d -p [ tsify ] src/scripts/ -o static/assets/js/main.js",
+    "watch:css": "stylus src/styles/ -w -o static/assets/css/main.css"
+  },
+  "keywords": [
+    "typescript",
+    "browserify",
+    "backbone"
+  ],
+  "author": "William Mapan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.7.10",
+    "browserify": "^10.2.4",
+    "stylus": "^0.51.1",
+    "tsify": "^0.11.2",
+    "watchify": "^3.2.2"
+  },
+  "dependencies": {
+    "backbone": "^1.2.1",
+    "gsap": "^1.17.0",
+    "jquery": "^2.1.4"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.min.js",
+    "backbone": "./node_modules/backbone/backbone-min.js",
+    "tweenmax": "./node_modules/gsap/src/minified/TweenMax.min.js"
+  }
+}
