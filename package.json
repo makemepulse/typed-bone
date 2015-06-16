@@ -1,5 +1,5 @@
 {
-  "name": "type-bone",
+  "name": "typed-bone",
   "version": "0.0.1",
   "description": "SPA boilerplate using typescript, browserify and backbone",
   "main": "index.js",
@@ -17,9 +17,11 @@
   "keywords": [
     "typescript",
     "browserify",
-    "backbone"
+    "backbone",
+    "jquery",
+    "tweenmax"
   ],
-  "author": "William Mapan",
+  "author": "@williamapan @makemepulse",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.7.10",
@@ -31,11 +33,13 @@
   "dependencies": {
     "backbone": "^1.2.1",
     "gsap": "^1.17.0",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "underscore": "^1.8.3"
   },
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.min.js",
     "backbone": "./node_modules/backbone/backbone-min.js",
-    "tweenmax": "./node_modules/gsap/src/minified/TweenMax.min.js"
+    "tweenmax": "./node_modules/gsap/src/minified/TweenMax.min.js",
+    "underscore": "./node_modules/backbone/node_modules/underscore/underscore-min.js"
   }
 }
