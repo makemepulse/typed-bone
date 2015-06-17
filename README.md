@@ -68,7 +68,7 @@ npm run build:js
 ### build:js:vendor
 
 Bundle the v.js static file from /src/scripts/vendor/vendor.js  
-By default, it contains PIXI.js and TweenMax on the window object.  
+By default, it contains Backbone, jQuery, Underscore and TweenMax on the window object.  
 Feel free to add more.
 
 ```bash
